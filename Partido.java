@@ -48,17 +48,16 @@ public class Partido    {
     }
 
     public void imprimeVenta() {
-        System.out.println("El arbitro del partido se llama " + arbitro);
-        System.out.println("Numero de tarjetas sacadas en el partido " + nTarjetas);
-        if(tarjetaRoja == true) {
-            System.out.println("Saco el arbitro alguna tarjeta roja: si");
-        }
-        else {
-            System.out.println("Saco el arbitro alguna tarjeta roja: no");
-        }
+        System.out.println("Arbitro " + arbitro + " Numero de tarjetas  " + nTarjetas
+        + " Tarjeta  Roja: si");
+       
+        
     }
 
-
+    public String estadoPartido() {
+        return "Arbitro " + arbitro + ", Numero de tarjetas  " + nTarjetas
+        + ", Tarjeta  Roja: si";
+    }
 
 
 
