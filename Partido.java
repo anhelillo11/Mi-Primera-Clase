@@ -38,7 +38,7 @@ public class Partido    {
         nTarjetas = nTarjetas + numeroTarjetas;
     }
     
-    public void estarALAVenta() {
+    public void partido() {
         if(tarjetaRoja == false) {
             tarjetaRoja = true;
         }
@@ -47,11 +47,17 @@ public class Partido    {
         }
     }
 
-    public void imprimeVenta() {
-        System.out.println("Arbitro " + arbitro + " Numero de tarjetas  " + nTarjetas
-        + " Tarjeta  Roja: si");
+    public void imprimeActaPartido() {
+        if(tarjetaRoja == true) {
+            System.out.println("Arbitro " + arbitro + ", Numero de tarjetas  " + nTarjetas
+            + ", Tarjeta  Roja: si");
        
-        
+        }
+        else {
+            System.out.println("Arbitro " + arbitro + ", Numero de tarjetas  " + nTarjetas
+            + ", Tarjeta  Roja: no");
+       
+        }
     }
 
     public String estadoPartido() {
